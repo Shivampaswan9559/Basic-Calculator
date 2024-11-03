@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+/* body css */
+
+body
+{
+    background-color: rgba(61, 175, 150, 0.46);
+  
+}
+/* result box section css */
+header
+{
+    background-color: #2e2d2d;
+    height: 10rem;
+    border: 1px solid black;
+    
+}
+.result
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 10px;
+    background-color: #323534;
+    padding-right: 1rem;
+}    
+
+.result_box
+{
+    padding:30px 20px;
+    align-items: center;
+    color: #f7dc0c;
+}
+
+/* input section css */
+
+.calculator
+{
+    border: 2px solid black;
+    margin: 1.5rem auto;
+    height: 34rem;
+    width: 34rem;
+    background-color: #1c1f1e;
+}
+
+.input_text 
+{  
+    overflow: auto ;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 0.3;
+}     
+
+
+
+.colum
+{
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+   
+}
+.colum div
+{
+    border: 1px solid #0000;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 7px 2px  black;
+    background-color: #abb3b2;
+    
+}
+.colum :hover
+{
+    cursor: pointer;
+}
+.colum :active
+{
+    border: 1.5px solid black;
+}
+/* display mode css */
+
+#mode
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+#mode input{
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    border: 1px solid black;
+}
+#dark
+{
+    background-color: red;
+}
+
+/* element decoration  */
+
+#clear , #mode , #percent_culculat , #divide , #add , #subtract , #multiply , #save , #dot
+{
+ background-color: #383d38;
+ color: #ffff;
+}
+#equal
+{
+    background-color: orangered;
+}
+

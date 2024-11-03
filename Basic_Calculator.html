@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <!-- Result Box Section  -->
+   
+    <div class="calculator">
+    <header>
+     <div class="result_box">
+       
+        <div class="input_text" id="input_text">enter the number</div>
+        <div class="result" id="result">0</div>
+
+     </div>
+    </header>
+ 
+    <main>
+        <!-- The element section  -->
+    
+     <div class="element">
+        <div id="fir_col" class="colum">
+
+            <div id="clear" onclick="clr()">Clear</div>
+            <div id="mode"  onclick="rev()"><input type="button" id="dark" onclick="dark()"><input type="button" id="lite" onclick="lite()"></div>
+            <div id="percent_culculat" onclick="percent()">%</div>
+            <div id="divide" onclick="operator('/')">&#247</div>
+
+        </div>
+      <div id="sec_col" class="colum">
+
+            <div id="one" onclick="number(1)">1</div>
+            <div id="two" onclick="number(2)">2</div>
+            <div id="three" onclick="number(3)">3</div>
+            <div id="add" onclick="operator('+')">+</div>
+
+        </div>
+        <div id="thir_col" class="colum">
+
+            <div id="four" onclick="number(4)">4</div>
+            <div id="five" onclick="number(5)">5</div>
+            <div id="six" onclick="number(6)">6</div>
+            <div id="subtract" onclick="operator('-')">-</div>
+
+        </div>
+        <div id="fur_col" class="colum">
+
+            <div id="seven" onclick="number(7)">7</div>
+            <div id="eight" onclick="number(8)">8</div>
+            <div id="nine" onclick="number(9)">9</div>
+            <div id="multiply" onclick="operator('*')">&#215</div>
+
+        </div>
+        <div id="fiv_col" class="colum">
+
+            <div id="save" onclick="save()">Save</div>
+            <div id="zero" onclick="number(0)">0</div>
+            <div id="dot" onclick="operator('.')">.</div>
+            <div id="equal" onclick="result()">=</div>
+
+        </div>
+     </div>
+    </main>
+
+</div>
+
+ <!-- javascript link -->
+
+<script src="calculator.js"></script>
+</body>
+</html>
